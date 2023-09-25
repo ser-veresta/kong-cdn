@@ -1,0 +1,14 @@
+ _format_version: "3.0"
+ _transform: true
+
+ services:
+ - host: cdn.filestackcontent.com
+   name: cdn_service
+   port: 443
+   protocol: https
+   routes:
+   - name: cdn_route
+     paths:
+     - /cdn
+     strip_path: true
+
