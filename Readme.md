@@ -18,6 +18,7 @@ docker run -d --name kong-dbless --network=kong-net \
 -p 8000:8000 \
 -p 8001:8001 \
 kong/kong-gateway:3.4.0.0
+pip install -r requirement.txt
 python api_script.py
 ```
 
